@@ -54,7 +54,7 @@ class MovingLSQ:
         self._dst = dst
     
 
-    def Run_Affine(self, srcPts, alpha = 0.5):
+    def Run_Affine(self, srcPts, alpha = 1):
         npoints = srcPts.shape[0]
         label_num = self._label_num
         weight = np.zeros([npoints, label_num], np.float)
@@ -111,7 +111,7 @@ class MovingLSQ:
         buf[:, 1] = srcPts[:, 0] * M[:, 1] + srcPts[:, 1] * M[:, 3]
         return buf + T
 
-    def Run_Rigid(self, srcPts, alpha = 0.5):
+    def Run_Rigid(self, srcPts, alpha = 1):
         npoints = srcPts.shape[0]
         label_num = self._label_num
         weight = np.zeros([npoints, label_num], np.float)
