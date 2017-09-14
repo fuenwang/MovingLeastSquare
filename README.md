@@ -4,6 +4,7 @@ This is the implementation for [Moving Least Square](http://faculty.cs.tamu.edu/
 wapring image into other shape with several control points. So far, I have implemented two kind of moving least sqare:
 1. Affine Deformation
 2. Rigid Deformation
+
 However, there is the third method **Similarity Deformation** which I haven't implemented yet.
 
 ## Usage
