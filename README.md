@@ -4,8 +4,7 @@ This is the implementation for [Moving Least Square](http://faculty.cs.tamu.edu/
 wapring image into other shape with several control points. So far, I have implemented two kind of moving least sqare:
 1. Affine Deformation
 2. Rigid Deformation
-
-However, there is the third method **Similarity Deformation** which I haven't implemented yet.
+3. Similarity Deformation
 
 ## Usage
 ```python
@@ -38,6 +37,7 @@ if __name__ == '__main__':
                 ])
     dstPts = solver.Run_Affine(srcPts) # For Affine Deformation
     dstPts = solver.Run_Rigid(srcPts)  # For Rigid Deformation
+    dstPts = solver.Run_Similarity(srcPts) # For Similarity Deformation
 #
 #   "dstPts" is the final position of "srcPts"
 #
